@@ -6,9 +6,20 @@ group 'org.example'
 version '1.0-SNAPSHOT'
 
 repositories {
-    mavenCentral()
+    jcenter()
 }
 
 dependencies {
+
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.12'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.12'
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: 'latest.release'
+
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-s3', version: 'latest.release'
+    compile group: 'com.amazonaws', name: 'aws-java-sdk-core', version: 'latest.release'
+
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
