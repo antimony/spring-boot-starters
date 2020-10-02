@@ -1,14 +1,3 @@
-plugins {
-    id 'java'
-}
-
-group 'org.example'
-version '1.0-SNAPSHOT'
-
-repositories {
-    jcenter()
-}
-
 dependencies {
 
     compileOnly 'org.projectlombok:lombok:1.18.12'
