@@ -1,0 +1,3 @@
+rootProject.name = "spring-boot-starters"
+
+include("spring-boot-starter-amazon-s3")
